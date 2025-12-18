@@ -23,9 +23,8 @@ body {
 
 /* HEADER */
 .header {
-    background-color: #005BBD;
-    border-bottom: 4px solid #005BBD;
-    padding: 16px 24px;
+    background-color: var(--azul);
+    border-bottom: 4px solid var(--amarillo);
 }
 
 .header-container {
@@ -37,23 +36,28 @@ body {
     position: relative;
 }
 
+/* LOGO */
 .logo {
     max-height: 70px;
     width: auto;
     height: auto;
 }
+
+/* TÍTULO CENTRADO */
 .header-title {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
 
-    font-size: 1.6rem;
+    font-size: 1.5rem;          /* tamaño equilibrado */
     font-weight: 700;
-    color: #005BBD;
+    color: var(--blanco);       /* ← contraste correcto */
     text-align: center;
     white-space: nowrap;
-}    
+    z-index: 1;
+}
+
 /* MAIN */
 .main {
     padding: 40px 20px;
@@ -90,21 +94,27 @@ body {
     margin-bottom: 8px;
 }
 
+/* BLOQUES DESTACADOS */
 .intro {
     background-color: #F5F8FC;
-    border-left: 4px solid #FFD800;
+    border-left: 4px solid var(--amarillo);
     padding: 14px 18px;
     margin: 16px 0;
     line-height: 1.6;
-    color: #000000;
+    color: var(--negro);
 }
 
 /* Listas con mismo estilo visual */
 .intro-list {
     background-color: #F5F8FC;
-    border-left: 4px solid #FFD800;
+    border-left: 4px solid var(--amarillo);
     padding: 14px 40px;
     margin: 16px 0;
+}
+
+.intro-list li {
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
 
 /* FOOTER */
@@ -124,6 +134,14 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+    .logo {
+        max-height: 55px;
+    }
+
+    .header-title {
+        font-size: 1.2rem;
+    }
+
     .content h1 {
         font-size: 1.6rem;
     }
@@ -131,12 +149,4 @@ body {
     .content h2 {
         font-size: 1.1rem;
     }
-
-    .logo {
-        max-height: 55px;
-    }
-    .header-title {
-        font-size: 1.2rem;
-    }
 }
-
