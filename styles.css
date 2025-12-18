@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables de color */
+:root {
+  --azul-principal: #005BBD;
+  --amarillo-acento: #FFD800;
+  --negro: #000000;
+  --blanco: #FFFFFF;
+  --gris-texto: #333333;
+  --espaciado: 1.2rem;
+}
+
+/* Contenedor general */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+  padding: var(--espaciado) 0;
+  border-bottom: 4px solid var(--amarillo-acento);
+}
+
+.site-header h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Secciones */
+.section {
+  margin: var(--espaciado) 0;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  color: var(--azul-principal);
+  margin-bottom: 0.5rem;
+}
+
+.section p,
+.section ul {
+  font-size: 1rem;
+  color: var(--gris-texto);
+  line-height: 1.5;
+}
+
+.section ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--negro);
+  color: var(--blanco);
+  text-align: center;
+  padding: var(--espaciado);
+  border-top: 4px solid var(--amarillo-acento);
+}
+
+/* Responsive: Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+  .section h2 {
+    font-size: 1.2rem;
+  }
+  .section p,
+  .section ul {
+    font-size: 0.9rem;
+  }
+}
