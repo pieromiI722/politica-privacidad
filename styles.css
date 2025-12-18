@@ -23,20 +23,22 @@ body {
 
 /* HEADER */
 .header {
-    background-color: var(--azul);
-    padding: 15px 0;
+    background-color: #005BBD;
+    padding: 16px 24px;
 }
 
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     max-width: 180px;
     width: 100%;
     height: auto;
+    display: block;
 }
 
 /* MAIN */
