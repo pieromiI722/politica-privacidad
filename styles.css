@@ -91,10 +91,20 @@ body {
 }
 
 .intro {
-    background-color: #f5f7fa;
-    padding: 15px;
-    border-left: 5px solid var(--amarillo);
-    margin-bottom: 30px;
+    background-color: #F5F8FC;
+    border-left: 4px solid #FFD800;
+    padding: 14px 18px;
+    margin: 16px 0;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Listas con mismo estilo visual */
+.intro-list {
+    background-color: #F5F8FC;
+    border-left: 4px solid #FFD800;
+    padding: 14px 40px;
+    margin: 16px 0;
 }
 
 /* FOOTER */
